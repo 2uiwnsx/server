@@ -1,0 +1,16 @@
+CREATE TABLE tblTodo(
+    seq NUMBER PRIMARY KEY,
+    todo VARCHAR2(1000) NOT NULL,
+    state CHAR(1) DEFAULT 'n' NOT NULL,
+    regdate DATE DEFAULT SYSDATE NOT NULL
+);
+
+CREATE SEQUENCE todoSeq;
+
+SELECT * FROM tblTodo;
+
+DROP SEQUENCE todoSeq;
+
+DROP TABLE tblTodo;
+
+COMMIT;
