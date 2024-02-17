@@ -1,0 +1,29 @@
+#header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #CCC;
+}
+#header > h1 {
+	font-size: 1.2rem;
+	margin: 1rem;
+}
+#header > h1 .material-symbols-outlined {
+	font-size: 1.8rem;
+	transform: translate(0, 4px);
+}
+#header > nav {
+	margin: 1rem;
+}
+#header > nav > a {
+	font-size: 16px;
+	padding-right: 2px;
+}
+#header > nav > a::after {
+	content: ' ·';
+}
+#header > nav > a:last-child::after {
+	content: '';
+}
+#main {
+	margin: 1rem;
+}
